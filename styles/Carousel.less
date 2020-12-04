@@ -1,7 +1,7 @@
 .carousel {
   .width-100();
   .flex(center, center);
-  height: 500px;
+  height: 300px;
   position: relative;
   overflow: hidden;
   margin-top: 16px;
@@ -34,8 +34,16 @@
     right: 25px;
     transform: translate(0, -50%);
   }
+  .carousel-images {
+    display:flex;
+    height:100%;
+    width:100%;
+    position:relative;
+    left:0%;
+  }
   img {
-    .width-100();
-    display: none;
+    width:50%;
+    height:100%;
+    object-fit: cover;
   }
 }
